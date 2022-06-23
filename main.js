@@ -67,6 +67,8 @@ function startButtonHandler(id) {
   }, 1000);
 }
 
+ $.jGrowl("Trabajar 25 m <br> Descansar 5 m <br> cada 4 ciclos descansar 15 m",{ life : 10000});
+
 function timerHandler(id = null) {
   time--;
   renderTime();
@@ -84,7 +86,7 @@ function markComplete(id) {
 }
 
 function startBreak() {
-  time = 1 * 60;
+  time = 5 * 60;
   document.querySelector("#time #taskName").textContent = "Break";
   timerBreak = setInterval(timerBreakHandler, 1000);
 }
@@ -108,3 +110,4 @@ function renderTime() {
     seconds < 10 ? "0" : ""
   }${seconds}`;
 }
+
