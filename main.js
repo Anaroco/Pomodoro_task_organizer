@@ -66,7 +66,7 @@ function startButtonHandler(id) {
     timerHandler(id);
   }, 1000);
 }
-
+// ALERT
  $.jGrowl("Trabajar 25 m <br> Descansar 5 m <br> cada 4 ciclos descansar 15 m",{ life : 10000});
 
 function timerHandler(id = null) {
